@@ -1,0 +1,43 @@
+<div *ngIf="theActualUser.username">
+  User: {{theActualUser | json}}
+</div>
+
+
+<button (click)="logMeOut()">Log Out</button>
+
+<button (click)="checkIfLoggedIn()">check if logged in </button>
+
+<h2>Signup Form</h2>
+
+<form (submit)="tryToSignUp()">
+  
+  <label>Username</label>
+  <input [(ngModel)]="signUpUser.username" name="blah" type="text">
+  
+  <label>Password</label>
+  <input [(ngModel)]="signUpUser.password" name="blah" type="text">
+  
+  
+  <button>Complete Registration</button>
+</form>
+
+
+
+<hr>
+
+<h2>Login Form</h2>
+
+<form (submit)="tryToLogIn()">
+  
+  <label>Username</label>
+  <input [(ngModel)]="loginUser.username" name="blah" type="text">
+  
+  <label>Password</label>
+  <input [(ngModel)]="loginUser.password" name="blah" type="text">
+  
+  
+  <button>Login</button>
+</form>
+
+
+<div *ngIf="theError">error: {{theError}}</div>

@@ -1,0 +1,30 @@
+<h3>Search</h3>
+<input type="text" (keyup)="searchFoods()" [(ngModel)]="theSearchTerm">
+
+<br>
+<br>
+
+<app-add-food></app-add-food>
+
+<div class="first-list">
+
+  <div *ngFor="let oneFoodItem of theFoodList" class="foodbox">
+    <h4>{{oneFoodItem.name}}</h4>
+    <p>Calories: {{oneFoodItem.calories | stringify}}</p>
+    <img [src]="oneFoodItem.image" alt="">
+    <button (click)="addToMenu(oneFoodItem)"  >Add To Menu</button>
+  </div>
+  
+</div>
+
+
+<div class="second-list">
+  <h2>Menu</h2>
+
+  <div *ngFor="let oneFoodItem of todaysFoods" class="foodbox">  
+    <h4>{{oneFoodItem.name}}</h4>
+    <p>Calories: {{oneFoodItem.calories | stringify}}</p>
+    <img [src]="oneFoodItem.image" alt="">    
+  </div>
+
+</div>

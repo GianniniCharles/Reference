@@ -1,0 +1,133 @@
+.links-in-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-in-nav li{
+    list-style: none;
+}
+
+.links-in-nav li a{
+    color: black;
+}
+.links-in-nav li a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.nav-row{
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+#first-link{
+    color: red;
+}
+
+.main-image-div{
+    background-image: url('./img/slider-1.jpg');
+    height: 690px;
+    background-size: cover;
+    filter: grayscale(90%);
+}
+
+.gray-thing{
+    background-image: url('./img/overlay.png');
+    height: 690px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.stuff-inside-image{
+    position: relative;
+    top: 100px;
+    width: 900px;
+    color: white;
+    text-align: center;
+   
+}
+
+.stuff-inside-image h1{
+    font-size: 50px;
+}
+
+.stuff-inside-image p {
+    font-size: 18px;
+}
+
+.stuff-inside-image button{
+    padding: 6px 35px;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(5,5,5,0);
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.three-column-section{
+    min-height: 350px;
+    padding: 40px 0;
+
+}
+
+.middle-red-section{
+    background-color: #ed564b;
+}
+
+.martini-glass{
+    color: white;
+    font-size: 50px;
+}
+
+
+.glyphicon{
+    font-size: 25px;
+    border: 6px solid white;
+    padding: 25px;
+    border-radius: 50%;
+}
+
+.middle-column{
+    color: white;
+    text-align: center;
+}
+
+.middle-column h3{
+    font-weight: bolder;
+}
+
+.middle-column p {
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+.latest-projects{
+ padding: 50px 0 15px 0;   
+ border-bottom: 0.25px solid lightgrey;
+}
+
+
+.first-images-row{
+    padding: 30px 0 0 0;
+}
+
+.first-images-row p {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.latest-projects h2{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.latest-projects h5{
+    font-weight: bolder;
+    color: #aaaaaf;
+}
+
+
+

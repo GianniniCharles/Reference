@@ -1,0 +1,24 @@
+{{!-- A test placed on here --}}
+Hi
+
+{{book.title}}
+{{!-- We're going to routes and making another file called reviewRoutes.js --}}
+
+{{!-- You have to make a route here --}}
+{{!-- The convention here is to  --}}
+<form action="/books/{{book._id}}/reviews/create" method="post">
+<p><label for ="reviewer">Who are you?</label></p>
+<p><input type="text" id="reviewer" name="reviewer"> </p>
+{{!-- name controls the value. req.body.whateverName'sValueIs --}}
+
+
+{{!-- example of label without a for attribute, cannot click on the words, sad --}}
+
+{{!-- this will be req.body.content --}}
+
+<label>What Do You Have To Say?</label>
+<textarea name="content" id="" cols="30" rows="10"></textarea>
+
+<button type = "submit">Add Your Review</button>
+
+</form>

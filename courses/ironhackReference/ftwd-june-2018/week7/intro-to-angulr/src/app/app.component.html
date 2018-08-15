@@ -1,0 +1,38 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  </div>
+
+  <ul>
+
+    <li *ngFor="let oneAnimal of arrayOfAnimals">
+
+      <div  *ngIf="oneAnimal.category !== 'mammal'">
+        <h3>Name: {{oneAnimal.name}}</h3>
+        <h4>Type: {{oneAnimal.category}}</h4>
+      </div>
+
+      <div *ngIf="oneAnimal.category === 'mammal'">
+        <h1>Name: {{oneAnimal.name}}</h1>
+        <h2>Type: {{oneAnimal.category}}</h2>
+      </div>
+
+    </li>
+
+  </ul>
+
+
+  <app-other></app-other>
+
+
+  
+
+
+
+
+
+
+ 
+

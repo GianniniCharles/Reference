@@ -1,0 +1,15 @@
+.red{
+    background-color: red;
+    text-decoration: underline;
+}
+
+
+.blue{
+    background-color: blue;
+    color: yellow;
+}
+
+
+.big{
+    font-size: 35px;
+}

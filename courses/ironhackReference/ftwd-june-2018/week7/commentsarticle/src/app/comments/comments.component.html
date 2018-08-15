@@ -1,0 +1,35 @@
+<h2>Comments</h2>
+<hr>
+
+
+<div *ngFor="let oneSingleComment of theComments">
+
+  <h4>{{oneSingleComment.author}}</h4>
+  
+  <p>{{oneSingleComment.content}}</p>
+  <hr>
+</div>
+
+<hr>
+<h4>New Comment</h4>
+
+<label for="">Author</label>
+<br>
+  <input #authorInput type="text">
+  <br>
+  <br>
+  <label for="">Comment</label>
+  <br>
+  <input #commentInput type="text">
+  <br>
+
+  <button (click)="addComment(authorInput, commentInput)">submit</button>
+
+
+
+<br>
+<br>
+
+<h3>Two Way Binding!</h3>
+<input [(ngModel)]="username" type="text">
+<h1>{{username}}</h1>

@@ -1,0 +1,127 @@
+
+.full-page{
+  height: 120vh;
+  background: url('images/glacier.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.indicator{
+  border: 10px solid red;
+}
+
+.viking-attack-animate{
+  background: url('images/vik-combat.gif');
+}
+
+.saxon-attack-animate{
+  background: url('images/sax-combat.gif');
+}
+
+.vik-death-animate-1{
+  background: url('images/matrix.gif');
+}
+
+.vik-death-animate-2{
+  background: url('images/vegeta-freeza.gif');
+}
+
+.sax-death-animate-1{
+  background: url('images/kamehameha.gif');
+}
+
+.sax-death-animate-2{
+  background: url('images/death.gif');
+}
+
+/*.viking-victory-1{
+  background: url('images/victory.gif');
+}
+
+.viking-victory-2{
+  background: url('images/drama-victory.jpg');
+}
+
+.saxon-victory-1{
+    background: url('images/walter-its-over.gif');
+}
+.saxon-victory-2{
+    background: url('images/walter-white-victory.jpg');
+}*/
+
+
+.viking-attack-animate,
+.saxon-attack-animate,
+.vik-death-animate-1,
+.vik-death-animate-2,
+.sax-death-animate-1,
+.sax-death-animate-2{
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*.viking-victory-1,
+.viking-victory-2,
+.saxon-victory-1,
+.saxon-victory-2{
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
+
+.viking-pic{
+  width: 100px;
+}
+
+.saxon-pic{
+  width: 60px;
+  margin-left: 15px;
+}
+
+.buttons{
+  margin-top: 50px;
+}
+
+.armies{
+  margin-top: 30px;
+}
+
+.viking-attack, .saxon-attack{
+  margin-left: 75px;
+}
+
+.viking-box, .saxon-box, .death-box{
+  display: inline-block;
+  margin: 15px;
+}
+
+.health, .strength{
+  color: white;
+  margin-left: 5px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+font-weight:bold;
+}
+
+.info{
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+font-weight:bold;
+min-height: 100px;
+text-align: center;
+padding: 15px;
+font-size: 20px;
+}
+
+.result{
+  width: 100%;
+}
+
+.health, .strength{
+  text-align: center;
+}

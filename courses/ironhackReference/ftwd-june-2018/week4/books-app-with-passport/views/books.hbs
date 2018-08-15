@@ -1,0 +1,16 @@
+
+{{#each listOfBooks}}
+
+<div>
+
+<p>{{this.title}} by {{this.author.name}} {{this.author.lastName}}</p>
+<img src="{{this.image}}">
+
+<a href="/books/{{this._id}}">See Details</a>
+
+</div>
+
+<hr>
+
+
+{{/each}}

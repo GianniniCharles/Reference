@@ -1,0 +1,39 @@
+<hr>
+{{theBook.title}}
+<hr>
+<p>Plot</p>
+{{theBook.description}}
+<hr>
+<h2>Author:</h2>
+{{theBook.author.name}} {{theBook.author.lastName}}
+<p>{{theBook.author.birthday}}</p>
+<p>{{theBook.author.nationality}}</p>
+<hr>
+Rating:{{rating}}
+<hr>
+<p><a href="/books/{{theBook._id}}/edit">Edit This Book</a></p>
+<p><a href="/books/{{theBook._id}}/reviews/new">Review this Book</a></p>
+
+
+<form action="/books/{{theBook._id}}/delete" method="post">
+<button>Delete This Book</button>
+</form>
+
+
+<div>
+  <h2>Reviews</h2>
+{{#each theBook.reviews}}
+  <h4>{{this.reviewer}}</h4>
+  <p>{{this.content}}</p>
+  <form action="/books/{{../theBook._id}}/reviews/delete/{{@index}}" method="post">
+  {{!-- this gets to the parent context --}}
+    <button>Delete This Review</button>
+    </form>
+  <hr>
+{{!-- look at bookRoutes.js look at book details, the book. --}}
+
+
+{{/each}}
+
+
+</div>
